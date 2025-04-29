@@ -1,0 +1,92 @@
+﻿@page "/"
+@using WebFormsApp.Web.Clients
+@using WindowsFormsAppLegacy.Core.Models
+@inject MoviesApiClient MoviesApiClient
+@rendermode InteractiveServer
+
+<PageTitle>Movies</PageTitle>
+
+<h1>Movie List</h1>
+
+
+@if (Movies != null && Movies.Any())
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Release Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var movie in Movies)
+        {
+            <tr>
+                <td>@movie.Id</td>
+                <td>@movie.Title</td>
+                <td>
+                    <button class="btn btn-link" @onclick="() => LoadActors(movie.Id)">
+                        @movie.Director
+                    </button>
+                </td>
+                <td>@movie.ReleaseDate.ToShortDateString()</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No movies available.</p>
+}
+
+<h2>Actors</h2>
+
+@if (Actors != null && Actors.Any())
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var actor in Actors)
+        {
+            <tr>
+                <td>@actor.Name</td>
+                <td>@actor.LastName</td>
+                <td>@actor.Age</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No actors available.</p>
+}
+
+@code {
+    private List<Movie>? Movies { get; set; } = [];
+    private List<Actor>? Actors { get; set; } = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        Movies = await MoviesApiClient.GetMovies();
+    }
+
+    async private Task LoadActors(int movieId)
+    {
+        var movie = await MoviesApiClient.GetMovieById(movieId);
+        if (movie != null)
+        {
+            Actors = movie.Actors;
+        }
+    }
+
+}

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppLegacy", "WindowsFormsAppLegacy\WindowsFormsAppLegacy.csproj", "{2D1CECC7-F53B-4919-9551-798C622E8A5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppLegacy.Core", "WindowsFormsAppLegacy.Core\WindowsFormsAppLegacy.Core.csproj", "{47E531F7-620A-43BB-B647-A281AE76F9AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApp.Web.AppHost", "WebFormsApp.Web\WebFormsApp.Web.AppHost\WebFormsApp.Web.AppHost.csproj", "{F04FE508-C988-4B18-889A-16C54DA17DAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApp.Web.ServiceDefaults", "WebFormsApp.Web\WebFormsApp.Web.ServiceDefaults\WebFormsApp.Web.ServiceDefaults.csproj", "{6CF4A428-6E09-5C16-CA98-7E0EFA18AD23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApp.Web.ApiService", "WebFormsApp.Web\WebFormsApp.Web.ApiService\WebFormsApp.Web.ApiService.csproj", "{A1CBFDB2-62B7-DC40-A38F-B37DA7B8DA01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormsApp.Web", "WebFormsApp.Web\WebFormsApp.Web\WebFormsApp.Web.csproj", "{8739ED4C-0032-BAEE-2139-34443419AE39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D1CECC7-F53B-4919-9551-798C622E8A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1CECC7-F53B-4919-9551-798C622E8A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1CECC7-F53B-4919-9551-798C622E8A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1CECC7-F53B-4919-9551-798C622E8A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E531F7-620A-43BB-B647-A281AE76F9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E531F7-620A-43BB-B647-A281AE76F9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E531F7-620A-43BB-B647-A281AE76F9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E531F7-620A-43BB-B647-A281AE76F9AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F04FE508-C988-4B18-889A-16C54DA17DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04FE508-C988-4B18-889A-16C54DA17DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04FE508-C988-4B18-889A-16C54DA17DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04FE508-C988-4B18-889A-16C54DA17DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF4A428-6E09-5C16-CA98-7E0EFA18AD23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF4A428-6E09-5C16-CA98-7E0EFA18AD23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF4A428-6E09-5C16-CA98-7E0EFA18AD23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF4A428-6E09-5C16-CA98-7E0EFA18AD23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1CBFDB2-62B7-DC40-A38F-B37DA7B8DA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1CBFDB2-62B7-DC40-A38F-B37DA7B8DA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1CBFDB2-62B7-DC40-A38F-B37DA7B8DA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1CBFDB2-62B7-DC40-A38F-B37DA7B8DA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8739ED4C-0032-BAEE-2139-34443419AE39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8739ED4C-0032-BAEE-2139-34443419AE39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8739ED4C-0032-BAEE-2139-34443419AE39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8739ED4C-0032-BAEE-2139-34443419AE39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF08872A-F3D6-4AE2-87F5-5F2A13CA517E}
+	EndGlobalSection
+EndGlobal

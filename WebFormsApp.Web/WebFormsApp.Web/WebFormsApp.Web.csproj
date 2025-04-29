@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>WebFormsApp.Web</AssemblyName>
+        <RootNamespace>WebFormsApp.Web</RootNamespace>
+        <PackageId>WebFormsApp.Web</PackageId>
+        <Authors>WebFormsApp.Web</Authors>
+        <Company>WebFormsApp.Web</Company>
+        <Product>WebFormsApp.Web</Product>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\WindowsFormsAppLegacy.Core\WindowsFormsAppLegacy.Core.csproj"/>
+        <ProjectReference Include="..\WebFormsApp.Web.ServiceDefaults\WebFormsApp.Web.ServiceDefaults.csproj"/>
+    </ItemGroup>
+
+</Project>
